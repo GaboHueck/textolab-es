@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textolab-es"
+version = "1.0"
+description = "Toolkit para analisis estructural y probabilístico para corpora"
+readme = "LEEME.md"
+requires-python = ">=3.8"
+
+dependencies = [
+	"nltk",
+	"spacy",
+	"pandas",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[project.scripts]
+textolab-es = "textolab.cli:main"
+
+
