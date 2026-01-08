@@ -34,14 +34,14 @@ Muestra todos los comandos disponibles y sus opciones.
 
 ## Comandos
 
-`estructura`
+`structure`
 Genera una tabla desglosando la estructura de un corpus.
 
 
 ```bash
-textolab-es estructura path/to/text.txt
-textolab-es estructura path/to/text.txt --to_csv output.csv
-textolab-es estructura path/to/text.txt --to_tsv output.tsv
+textolab-es structure path/to/text.txt
+textolab-es structure path/to/text.txt --to_csv output.csv
+textolab-es structure path/to/text.txt --to_tsv output.tsv
 ```
 La tabla generada muestra:
 
@@ -55,13 +55,13 @@ La tabla generada muestra:
 
 ---
 
-`muestra`
+`sample`
 Extrae una frase aleatoria de un corpus.
 
 
 ```bash
-textolab-es muestra path/to/text.txt
-textolab-es muestra path/to/text.txt -n 5
+textolab-es sample path/to/text.txt
+textolab-es sample path/to/text.txt -n 5
 ```
 
 Formato de salida:
@@ -76,12 +76,12 @@ n es el índice de la frase seleccionada aleatoriamente
 
 ---
 
-`palabrero` (Markov babbler)
+`babbler` (Markov babbler)
 Entrena y genera texto utilizando un modelo de Markov a partir de un corpus.
 
 ```bash
-textolab-es palabrero path/to/text.txt
-textolab-es palabrero path/to/text.txt -n 3 -N 200
+textolab-es babbler path/to/text.txt
+textolab-es babbler path/to/text.txt -n 3 -N 200
 ```
 Donde:
 
@@ -93,11 +93,11 @@ El entrenamiento y la generación están implementados en la clase MarkovBabbler
 
 ---
 
-`describir`
+`describe`
 Genera una descripción general del corpus.
 
 ```bash
-textolab-es describir path/to/text.txt
+textolab-es describe path/to/text.txt
 ```
 Revela:
 
